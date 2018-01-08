@@ -6,7 +6,6 @@
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.946"]
-                 [org.clojure/core.match "0.3.0-alpha5"]
                  [reagent "0.7.0"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
@@ -46,7 +45,7 @@
                         :compiler
                         {:output-to "public/js/app.js"
                          :output-dir "public/js/release"
-                         :asset-path   "js/out"
+                         :asset-path "js/out"
                          :optimizations :advanced
                          :pretty-print false}}}}
 

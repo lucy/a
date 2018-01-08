@@ -1,8 +1,3 @@
-(ns w.prod
-  (:require
-    [w.core :as core]))
-
-;;ignore println statements in prod
-(set! *print-fn* (fn [& _]))
-
+(ns w.prod (:require [w.core :as core]))
+(set! *print-fn* (fn [& _])) ;ignore println statements in prod
 (core/init!)
